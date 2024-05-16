@@ -12,10 +12,10 @@ document.addEventListener('DOMContentLoaded', function() {
     ];
 
     btn5.addEventListener('click', function () {
-        const lastButtonValue = buttons[buttons.length - 1].innerHTML;
+        const lastButtonValue = buttons[buttons.length - 1].textContent;
         for (let i = buttons.length - 1; i > 0; i--) {
-            buttons[i].innerHTML = buttons[i - 1].innerHTML;
+            buttons[i].textContent = buttons[i - 1].textContent;
         }
-        buttons[0].innerHTML = lastButtonValue;
+        buttons[0].textContent = lastButtonValue;
     });
 });
